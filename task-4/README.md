@@ -20,13 +20,11 @@ Implement a form that captures the fields required to create a task.
 3. Add an ID attribute to each form field and implement the code needed to retrieve the each form field value using the following method:
       ```javascript
        const newTaskNameInput = document.querySelector('#newTaskNameInput');
-       const name = newTaskNameInput.value;
       ```
 4. Log your field inputs to verify that you are getting the data you need to validate.
       ```javascript
        const newTaskNameInput = document.querySelector('#newTaskNameInput');
-       const name = newTaskNameInput.value;
-       console.log("name:  " + name);
+       console.log("name:  " + newTaskNameInput.value);
       ```
 > #### Useful Resources for this step
 > - [Forms](https://getbootstrap.com/docs/4.5/components/forms/)
