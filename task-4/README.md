@@ -44,7 +44,7 @@ Implement a form that captures the fields required to create a task.
 2. Add `<div class="valid-feedback">` and `<div class="invalid-feedback">` in each of your form inputs with a message to the user.
 3. Depending on if the input is valid or invalid, we can add or remove the class to the corrosponding input. We can use:
  `newTaskNameInput.classList.remove('is-valid');` together with  
-`newTaskNameInput.classList.add('is-invalid');`  and Bootstrap will take care of showing an invalid input message. Try out the opposite for a valid message!  
+`newTaskNameInput.classList.add('is-invalid');`  and Bootstrap will take care of showing an invalid input message. Try the opposite logic for a valid message!  
  
 
 ### Bonus step: Date validation
