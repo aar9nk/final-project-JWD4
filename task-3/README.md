@@ -23,8 +23,9 @@ In this step, we'll create a basic structure of a card with the task's informati
 1. Add a new sample [card](https://getbootstrap.com/docs/4.5/components/card/) to the `index.html`
 2. Add field inside the card for the task name.
 3. Add field inside the card for the task description.
-4. Add field inside the card for the task assigned to.
+4. Add field inside the card for who the task is assigned to.
 5. Add field inside the card for the task due date.
+6. Add field inside the card for the task status.
 
 ### Step 2: Implementing a tasks list
 
