@@ -15,18 +15,9 @@ form.addEventListener("submit", (event) => {
   console.log("Task Assigned To :" + validateAssignedTo.value.length);
   console.log("Task Due Date :" + validateDueDate.value);
   console.log("Task Status:" + validateStatus.value);
-  let todaysDate = new Date(Date.now())
-    .toLocaleString()
-    .split(",")[0]
-    .split("/");
-  let day = todaysDate[0];
-  let month = todaysDate[1];
-  let year = todaysDate[2];
-  // taskDueDate is in yyyy-mm-dd format
-  let taskDueDate = validateDueDate.value.split("-");
 
-  // Form validation for Task Name Field for min length 2
-  if (validateName.value.length > 2) {
+  // Form validation for Task Name Field min length 5
+  if (validateName.value.length > 5) {
     validateName.classList.add("is-valid");
     validateName.classList.remove("is-invalid");
   } else {
@@ -35,8 +26,8 @@ form.addEventListener("submit", (event) => {
     validationFail++;
   }
 
-  // Form validation for Task Description Field for min length 8
-  if (validateDescription.value.length > 8) {
+  // Form validation for Task Description Field min length 5
+  if (validateDescription.value.length > 5) {
     validateDescription.classList.add("is-valid");
     validateDescription.classList.remove("is-invalid");
   } else {
@@ -45,7 +36,7 @@ form.addEventListener("submit", (event) => {
     validationFail++;
   }
 
-  // Form validation for Task Assigned Field for min length 5
+  // Form validation for Task Assigned Field min length 5
   if (validateAssignedTo.value.length > 5) {
     validateAssignedTo.classList.add("is-valid");
     validateAssignedTo.classList.remove("is-invalid");
@@ -53,15 +44,10 @@ form.addEventListener("submit", (event) => {
     validateAssignedTo.classList.add("is-invalid");
     validateAssignedTo.classList.remove("is-valid");
     validationFail++;
-  }
-  console.log(
-    `taskDueDate[2]:${taskDueDate[2]} day:${day} taskDueDate[1]:${taskDueDate[1]} month:${month}`
-  );
-  if (
-    taskDueDate[2] >= day &&
-    taskDueDate[1] >= month &&
-    taskDueDate[0] >= year
-  ) {
+  }  
+  // Form validation for Due Date Field not empty
+  // try your own validation for a date in the future
+  if (validateDueDate.value) {
     validateDueDate.classList.add("is-valid");
     validateDueDate.classList.remove("is-invalid");
   } else {
@@ -69,8 +55,8 @@ form.addEventListener("submit", (event) => {
     validateDueDate.classList.remove("is-valid");
     validationFail++;
   }
-  // Form validation for Task Status Field for not empty
-  if (validateAssignedTo.value.length) {
+  // Form validation for Task Status Field not empty
+  if (validateAssignedTo.value) {
     validateAssignedTo.classList.add("is-valid");
     validateAssignedTo.classList.remove("is-invalid");
   } else {
