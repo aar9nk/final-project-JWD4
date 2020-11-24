@@ -76,7 +76,7 @@ form.addEventListener("submit", (event) => {
     validationFail++;
   }
   console.log(
-    `taskDueDate[2]:${taskDueDate[2]} day:${day} taskDueDate[1]:${taskDueDate[1]} month:${month}`
+    `taskDueDate[2]:${taskDueDate[2]} day:${day} taskDueDate[1]:${taskDueDate[1]} month:${month} taskDueDate[0]:${taskDueDate[0]} year:${year}`
   );
   if (
     taskDueDate[2] >= day &&
