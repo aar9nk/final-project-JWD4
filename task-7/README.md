@@ -2,27 +2,25 @@
 
 ## Description
 
-For this task, we'll write the code to update a task's status to "DONE" once a "Mark As Done" button on the task is clicked.
-
-Note, for this task, we are _not_ using the "Update Task" form. This is part of the re-structuring of the project. This step will be added as a **stretch goal** to the end of the course.
+For this task, we'll write the code to update a task's status to "Done" once a "Done" button on the task is clicked.
 
 ## Walkthrough
 
-### Step 1: Adding the "Mark As Done" button
+### Step 1: Adding the "Done" button
 
 > #### Useful Resources for this step
 > - [Bootstrap - Buttons](https://getbootstrap.com/docs/4.5/components/buttons/)
 
-In this step, we'll add a "Mark As Done" button to the tasks, so that a user can click the button to mark that specific task as done.
+In this step, we'll add a "Done" button to the tasks, so that a user can click the button to mark that specific task as done.
 
-1. In `js/taskManager.js`, within the `createTaskHtml` function, add a button to the task html to mark the task as done.
+1. If you don't already have a "Done" button then in `js/taskManager.js`, within the `createTaskHtml` function, add a button to the task html to mark the task as done.
 2. Add a 'done-button' class to the "Mark As Done" button. We'll use this later to check if the button has been clicked.
 
 > #### Test Your Code!
 > Now is a good chance to test your code, open `index.html` in the browser and create a new task using the form.
 >
 > **Expected Result**
-> You should see your tasks now have a "Mark As Done" button.
+> You should see your tasks now have a "Done" button.
 
 ### Step 2: Adding an Event Listener to the Task List
 
@@ -36,11 +34,11 @@ In this step, we'll add a "Mark As Done" button to the tasks, so that a user can
 
 In this step, we'll add an Event Listener to our **Task List**, so that we can check if one of our Task's buttons is clicked.
 
-Note that we're not adding an Event Listener to the "Mark As Done" buttons, this is because instead of adding Event Listener's to each "Mark As Done" button, we can add a singular Event Listener to the **Task List** and use [DOM Traversal](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#The_document_object_model) to find the Task that was clicked. **DOM Traversal** is the act of using code to _traverse_ up and down the **DOM Tree** to find a specific **DOM Element**.
+Note that we're not adding an Event Listener to the "Done" buttons, this is because instead of adding Event Listener's to each "Mark As Done" button, we can add a singular Event Listener to the **Task List** and use [DOM Traversal](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#The_document_object_model) to find which Task was clicked. **DOM Traversal** is the act of using code to _traverse_ up and down the **DOM Tree** to find a specific **DOM Element**.
 
 This way, we can avoid having to add Event Listeners to each and every "Mark As Done" button on the page.
 
-1. Make sure the **Task List** in `index.html` has an id you can use to select it, I went with `tasksList`.
+1. Make sure the **Task List** in `index.html` has an id you can use to select it, I went with `task-list`.
 
 2. In `js/index.js`, at the bottom of the file, use `querySelector` to select the **Task List** and store it in a variable.
 
