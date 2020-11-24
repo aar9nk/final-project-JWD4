@@ -21,7 +21,7 @@ you start designing. Ask the instructor if you have any questions!
 
 
 > #### Test your Design!
-> Navigate through your designs and validate that you meet the **assesment criteria**. 
+> Navigate through your designs and validate that you meet the **assessment criteria**. 
 
 > **Expected Result**
 > You should be able to navigate to all screens and fulfill the requirements.
@@ -29,7 +29,7 @@ you start designing. Ask the instructor if you have any questions!
 
 ## Results
 
-You should have implemented the different screens of your application, meeting the following **assesment criteria**:
+You should have implemented the different screens of your application, meeting the following **assessment criteria**:
 
 * Contains a Task Form where the user inputs their tasks including the required information: Name, Description, AssignedTo, DueDate, Status
 * Contains a Task Layout (an individual card for each task the user adds) with the required information: Name, Description, AssignedTo, DueDate, Status

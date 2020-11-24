@@ -38,11 +38,11 @@ will be responsible for managing the tasks in the application.
 
 ### Step 3: Adding A New Task Programmatically
 
-In this step, we'll add a method to the `TaskManager` class that will allow us to add tasks to it's `tasks` property.
+In this step, we'll add a method to the `TaskManager` class that will allow us to add tasks to its `tasks` property.
 
 As part of this process, we're going to create a unique `id` for each task.
 
-For each task for have a unique `id`, we will need to keep track of what `id` the latest task was created with, so that we can increment that `id` for the next task.
+We will need to keep track of what `id` the latest task was created with so that we can increment that `id` for the next task.
 
 For example, pay attention to the two `task` objects below:
 ```js
@@ -72,7 +72,7 @@ Notice how each task has a unique `id`? We will be using this `id` in future ste
 
 1. In the `TaskManager`'s `constructor`, accept a `currentId` parameter, with a default value of `0`.
 2. Assign the `currentId` to a new property on the class, `this.currentId`.
-3. Create a method on the class, `addTask`. This method should accept all the nessecary information from the form to create a task as parameters.
+3. Create a method on the class, `addTask`. This method should accept all the necessary information from the form to create a task as parameters.
     - `name`
     - `description`
     - `assignedTo`

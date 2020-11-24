@@ -18,7 +18,7 @@ Implement the card layout bootstrap component that contains the task information
 
 ### Step 1: Implement the task Card layout
 
-In this step, we'll create a basic structure of a card with the task's information. This will be used as a template that we will later fill in from our form using javascript. But for now we will *hardcode* it! 
+In this step, we'll create a basic structure of a card with the task's information. This will be used as a template that we will later fill in from our form using javascript. But for now, we will *hardcode* it! 
 
 1. Add a new sample [card](https://getbootstrap.com/docs/4.5/components/card/) to the `index.html`
 2. Add field inside the card for the task name.
@@ -38,12 +38,12 @@ In this step, we'll create a basic structure of a card with the task's informati
 2. Add each of your 5 cards inside the list group
 
  #### Test Your Code!
- Now is a good chance to test your page, open your `index.html` on your favorite browser or run `open index.html` from your terminal inside the final-project folder
+ Now is a good chance to test your page, open your `index.html` on your favourite browser or run `open index.html` from your terminal inside the final-project folder
 
 
 ## Results
 
-We've now created the basic structure to represent a list of tasks. We will eventually take these out and replace it with whatever the user inputs into the form. But to check the styling and compatabilty let's just keep them like this for the time being. 
+We've now created the basic structure to represent a list of tasks. We will eventually take these out and replace it with whatever the user inputs into the form. But to check the styling and compatibility let's just keep them like this for the time being. 
 
 ## Example
 

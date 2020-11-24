@@ -37,7 +37,7 @@ In this method, we'll be removing the task from the `this.tasks` array. Interest
 
 For this step, we'll go with the second way. It's more _explicit_ and clear.
 
-1. In `js/taskManager.js`, create a `deleteTask` method on the `TaskManager` class. It should take one parameter, `taskId`, the id of the task we want deleted.
+1. In `js/taskManager.js`, create a `deleteTask` method on the `TaskManager` class. It should take one parameter, `taskId`, the id of the task we want to be deleted.
 2. In the `deleteTask` method, create a new variable `newTasks` and set it to an empty array.
 3. Loop over the tasks, and for each iteration:
     - Get the current task in the loop, store it in a variable `task`.
@@ -45,7 +45,7 @@ For this step, we'll go with the second way. It's more _explicit_ and clear.
     - If the `task.id` is **not** equal to the `taskId`, push the `task` into the `newTasks` array.
 4. Set `this.tasks` to `newTasks`.
 
-For each iteration we make sure that each task being added back into the `this.tasks` array is **not** the task that was deleted. 
+For each iteration, we make sure that each task being added back into the `this.tasks` array is **not** the task that was deleted. 
 
 ### Step 3: Setting an EventListener to the Delete Button on Tasks
 
@@ -55,7 +55,7 @@ For each iteration we make sure that each task being added back into the `this.t
 
 Now we have our `deleteTask` method ready, we need to connect it to the delete buttons we created in Step 1.
 
-We'll be using the `delete-button` class we added to the buttons to find them. It's all very similar to the code we did for the "Done" button. After the deleting the task, remember to `taskManager.save()` and `taskManager.render()` the tasks!
+We'll be using the `delete-button` class we added to the buttons to find them. It's all very similar to the code we did for the "Done" button. After deleting the task, remember to `taskManager.save()` and `taskManager.render()` the tasks!
 
 1. In `js/index.js`, find the `EventListener` for the `click` event on the `Tasks List` we created in Task 8.
 2. At the bottom of the function, after our code that handles the "Done" button, create a new `if` statement to check if the `event.target.classList` `contains` the class `'delete-button'`.

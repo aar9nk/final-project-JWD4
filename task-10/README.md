@@ -27,13 +27,13 @@ In this step, we'll add Mocha to our project.
 > #### Useful Resources for this step
 > - [Mocha - Getting Started](https://mochajs.org/#getting-started)
 
-In this step, we'll test some of the methods that exist on our `TaskManager` class.
+In this step, we'll test some of the methods that exist in our `TaskManager` class.
 
 1. Use what you have learnt on testing to unit test the following methods on the `TaskManager` class:
   - `addTask`
   - `deleteTask`
   - `getTaskById`
-2. Add a test case that tests how the `TaskManager` is initialized, ie: the `constructor` being called when a `new TaskManager()` is initialized.
+2. Add a test case that tests how the `TaskManager` is initialized, ie: the `constructor` is called when a `new TaskManager()` is initialized.
 
 > #### Test Your Code!
 > Now is a good chance to test your code:
