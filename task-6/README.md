@@ -25,31 +25,31 @@ In this step, we'll create a function using [template literals](https://develope
     For example:
     ```javascript
     const html = `
-        <li class="card" style="min-width: 50vw">
+        `<li class="card" style="min-width: 50vw">
             <div class="card-body">
-              <h5 class="card-title">Name</h5>
-              <p class="card-text">
-                Some quick example text for a description.
-              </p>
-              <p class="card-text">Assigned To</p>
-              <p class="card-text">Due Date</p>
-              <div class="card-footer row">
-                <div class="col-6">
-                  <p class="card-text"><b>Task Status</b></p>
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">
+                    ${description}
+                </p>
+                <p class="card-text">${assignedTo} To</p>
+                <p class="card-text">${dueDate}</p>
+                <div class="card-footer row">
+                    <div class="col-6">
+                        <p class="card-text"><b>${status}</b></p>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-success done-button">
+                            Done
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-danger delete-button">
+                            Delete
+                        </button>
+                    </div>
                 </div>
-                <div class="col-3">
-                  <button id="done-button" class="btn btn-outline-success">
-                    Done
-                  </button>
-                </div>
-                <div class="col-3">
-                  <button id="delete-button" class="btn btn-outline-danger">
-                    Delete
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
+               </div>
+            </li>`
     `
     ```
 
@@ -67,33 +67,34 @@ In this step, we'll create a function using [template literals](https://develope
 >
 > You should see HTML for the task in the console, for example:
 >   
-> ```html
-><li class="card" style="min-width: 50vw">
->            <div class="card-body">
->             <h5 class="card-title">Name</h5>
->              <p class="card-text">
->                Some quick example text for a description.
->              </p>
->              <p class="card-text">Assigned To</p>
->              <p class="card-text">Due Date</p>
->              <div class="card-footer row">
->                <div class="col-6">
->                  <p class="card-text"><b>Task Status</b></p>
->                </div>
->                <div class="col-3">
->                  <button id="done-button" class="btn btn-outline-success">
->                    Done
->                  </button>
->                </div>
->                <div class="col-3">
->                  <button id="delete-button" class="btn btn-outline-danger">
->                    Delete
->                  </button>
->                </div>
->              </div>
->            </div>
->          </li>
-> ```
+ ```html
+
+ <li class="card" style="min-width: 50vw">
+  <div class="card-body">
+    <h5 class="card-title">${name}</h5>
+    <p class="card-text">
+      ${description}
+    </p>
+    <p class="card-text">${assignedTo} To</p>
+    <p class="card-text">${dueDate}</p>
+    <div class="card-footer row">
+      <div class="col-6">
+        <p class="card-text"><b>${status}</b></p>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-outline-success done-button">
+          Done
+        </button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-outline-danger delete-button">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</li>
+ ```
 
 ### Step 2: The render method
 
