@@ -128,7 +128,7 @@ We can mostly rely on the data stored for each task in the `TaskManager`'s `task
 
     5. `push` the `taskHtml` into the `tasksHtmlList` array.
 
-4. After looping through each task, create a `tasksHtml` variable, set the variable to a string of HTML of all the tasks by `join`ing the `tasksHtmlList` array together, separating each task's html with a newline.
+4. After looping through each task, create a new `tasksHtml` variable (think about your scoping), and set it to a string of HTML of all the tasks by `join`ing the `tasksHtmlList` array together, separating each task's html with a newline.
 
     **Hint**: `\n` can be used to represent a newline.
 
