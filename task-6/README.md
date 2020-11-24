@@ -112,9 +112,9 @@ We can mostly rely on the data stored for each task in the `TaskManager`'s `task
 
 1. In `js/taskManager.js`, within the `TaskManager` class, create a `render()` method. This method does not need any parameters.
 
-2. Create a variable storing an empty array to hold the HTML of all the tasks' html, `tasksHtmlList`.
+2. Create a variable `tasksHtmlList` and assign it an empty array. This will hold the HTML of all the tasks.
 
-3. Loop over the `TaskManager`'s tasks, for each task:
+3. Loop over the `TaskManager`'s tasks, and for each task:
 
     1. Store the current task in a variable
 
