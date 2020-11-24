@@ -75,9 +75,9 @@ This way, we can avoid having to add Event Listeners to each and every "Done" bu
 > - [Using Data Attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 > - [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
-In order to find the correct Task we want to update, we need a way to find which `TaskManager`'s `Task`'s "Done" button we clicked on the page. To do this, we'll be using our unique `id` we set for each task in the previous project steps.
+In order to find the correct Task we want to update, we need a way to find which `TaskManager`'s `Task`'s "Done" button we clicked on the page. To do this, we'll be using the unique `id` we set for each task in the previous project steps.
 
-Before we do however, we'll need to make sure we add this `id` to the HTML of each `task`, so that we can later retrieve the `id` and use it to look up which `task` we clicked.
+Before we do, we'll need to make sure we add this `id` to the HTML of each `task`, so that we can later retrieve the `id` and use it to look up which `task` we clicked.
 
 1. In `js/taskManager.js`, find the `createTaskHtml` function created in the project's **Task 7**.
 
@@ -180,7 +180,7 @@ Stretch Goals are optional steps to attempt once your group has completed **all*
 
 For this Stretch Goal, we want to add specific styles to our Task Status depending on whether the Status is `'Done'` or `'In Progress'`.
 
-In `js/taskManager.js`, in the HTML for each Task, change the style (eg: color) of the Task Status, depending on whether the passed in `status` is equal to `'In Progress'` or not.
+In `js/taskManager.js`, in the HTML for each Task, change the style (eg: colour) of the Task Status, depending on whether the passed in `status` is equal to `'In Progress'` or not.
 
 Check out [example/js/taskManager.js](example/js/taskManager.js) for a completed example!
 

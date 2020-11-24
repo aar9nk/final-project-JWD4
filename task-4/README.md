@@ -40,7 +40,7 @@ Implement a form that captures the fields required to create a task.
 
 ### Step 3: Showing errors to users
 
-1. Try out the example over in: [Bootstrap form validation (You might have to scroll down to "validation")](https://getbootstrap.com/docs/4.5/components/forms/#validation/) and check out thier valid and invalid messages.
+1. Try out the example over in [Bootstrap form validation (You might have to scroll down to "validation")](https://getbootstrap.com/docs/4.5/components/forms/#validation/) and check out their valid and invalid messages.
 2. Add `<div class="valid-feedback">` and `<div class="invalid-feedback">` in each of your form inputs with a message to the user.
 3. Depending on if the input is valid or invalid, we can add or remove the class to the corrosponding input. We can use:
  `newTaskNameInput.classList.remove('is-valid');` together with  

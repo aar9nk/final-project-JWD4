@@ -2,7 +2,7 @@
 
 ## Description
 
-In this task, we'll _persist_ (ie: save) our tasks to LocalStorage, so that we can load them again the next time we visit our page.
+For this task, we'll _persist_ (ie: save) our tasks to LocalStorage, so that we can load them again the next time we visit our page.
 
 ## Walkthrough
 
