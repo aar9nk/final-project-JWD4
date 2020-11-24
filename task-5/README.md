@@ -52,7 +52,7 @@ const task1 = {
     description: 'Take out the trash to the front of the house',
     assignedTo: 'Nick',
     dueDate: '2020-09-20',
-    status: 'TODO'
+    status: 'In Progress'
 };
 
 const task2 = {
@@ -61,7 +61,7 @@ const task2 = {
     description: 'Prepare a healthy serving of pancakes for the family tonight',
     assignedTo: 'Nick',
     dueDate: '2020-09-20',
-    status: 'TODO'
+    status: 'In Progress'
 };
 ```
 
@@ -77,9 +77,10 @@ Notice how each task has a unique `id`? We will be using this `id` in future ste
     - `description`
     - `assignedTo`
     - `dueDate`
+    - `status`
 4. Within the `addTask` method, increment the `this.currentId`
 5. `push` a new task into the `this.tasks` array, with the correct properties of the task, using the values passed in as parameters as well as the new `this.currentId`
-    **Note** Make sure to include the `id` and a default `status` of `'TODO'`
+    **Note** Make sure to include the `id`
 
 > #### Test Your Code!
 > Now is a good chance to test your code, head over to `js/index.js` and do the following
