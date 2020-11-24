@@ -80,7 +80,7 @@ Notice how each task has a unique `id`? We will be using this `id` in future ste
     - `status`
 4. Within the `addTask` method, increment the `this.currentId`
 5. `push` a new task into the `this.tasks` array, with the correct properties of the task, using the values passed in as parameters as well as the new `this.currentId`
-    **Note** Make sure to include the `id`
+  
 
 > #### Test Your Code!
 > Now is a good chance to test your code, head over to `js/index.js` and do the following
@@ -96,16 +96,15 @@ Notice how each task has a unique `id`? We will be using this `id` in future ste
 
 In this final step, we will use the `TaskManager` class to keep track of tasks we add with the **New Task** form.
 
-**Note**: For now, if your **New Task** form is on a seperate page to your **Task List**, copy it over to your **Task List** so it's all on the one page.
-
 > #### Useful Resources for this step
 > - [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 > - [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 > - [Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+> - [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
 
-1. Make sure a new `TaskManager` is initialized near the top of the file.
-2. In `index.js`, add an event listener to the **New Task** form, listening to the `submit` event. If there is already an event listener used for validation, use that one.
-3. When the `submit` event fires, if validation of the form is successful, use the values of each `input` in the form to call the `taskManager`'s `addTask` method.
+1. Make sure a new `TaskManager` is initialized at the top of the file.
+2. In `index.js` using the `eventListener` created for the form validation, create some logic to ensure the following events only happen if all the inputs are valid.
+3. When the `submit` event fires, call the `taskManager`'s `addTask` method passing in your form's input.
     - **Note**: Make sure to prevent the default action of the form!
 4. Clear the values from each form input, ready for the next submission.
 
@@ -113,7 +112,7 @@ In this final step, we will use the `TaskManager` class to keep track of tasks w
 
 We've now set up the `TaskManager` class, created an `addTask` and hooked it up to our **New Task** form!
 
-Test out your code by adding some tasks using the **New Task** form, and checking the `TaskManager` instance's `tasks` array for the tasks.
+Test out your code by adding some tasks using the **New Task** form, and checking the `tasks` array for the new tasks.
 
 ## Example
 
