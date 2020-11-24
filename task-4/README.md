@@ -47,7 +47,7 @@ Implement a form that captures the fields required to create a task.
 `newTaskNameInput.classList.add('is-invalid');`  and Bootstrap will take care of showing an invalid input message. Try the opposite logic for a valid message!  
  
 
-### (OPTIONAL 1) Step 6: Stretch Goal - Hiding the "Done" Button For Completed Tasks
+### (OPTIONAL) Stretch Goal - Valid date in the future
 
 Stretch Goals are optional steps to attempt once your group has completed **all** previous steps. Stretch Goals require out-of-the-box thinking and do not include a step-by-step walkthrough. It's a challenge, good luck!
 
