@@ -12,12 +12,12 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status) => {
         <p class="card-text"><b>${status}</b></p>
       </div>
       <div class="col-3">
-        <button id="done-button" class="btn btn-outline-success">
+        <button class="btn btn-outline-success done-button">
           Done
         </button>
       </div>
       <div class="col-3">
-        <button id="delete-button" class="btn btn-outline-danger">
+        <button class="btn btn-outline-danger delete-button">
           Delete
         </button>
       </div>
