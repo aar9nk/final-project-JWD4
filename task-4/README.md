@@ -47,7 +47,10 @@ Implement a form that captures the fields required to create a task.
 `newTaskNameInput.classList.add('is-invalid');`  and Bootstrap will take care of showing an invalid input message. Try the opposite logic for a valid message!  
  
 
-### Bonus step: Date validation
+### (OPTIONAL 1) Step 6: Stretch Goal - Hiding the "Done" Button For Completed Tasks
+
+Stretch Goals are optional steps to attempt once your group has completed **all** previous steps. Stretch Goals require out-of-the-box thinking and do not include a step-by-step walkthrough. It's a challenge, good luck!
+
 Should a date in the past be a valid input? Check out some [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) on how JavaScript handles dates.
 
 
