@@ -99,5 +99,6 @@ form.addEventListener("submit", (event) => {
       validateStatus.value
     );
     clearFormFields();
+    taskManager.render();
   }
 });
