@@ -2,7 +2,7 @@
 
 ## Description
 
-For this task, we'll be writing the code to display the `TaskManager`'s `tasks` array on the page.
+For this task, we'll be writing the code to display each of the `TaskManager`'s `tasks` on the page.
 
 ## Walkthrough
 
@@ -20,28 +20,40 @@ In this step, we'll create a function using [template literals](https://develope
     - `dueDate`
     - `status`
 
-    **Hint**: Try using an arrow function!
-
-2. Within the `createTaskHtml` function, create a string using [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals), copying the HTML of a single task from the `index.html`
+2. Within this `createTaskHtml` function, create a string using [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals), copying across one of your tasks that we *harcoded* in earlier from the `index.html`
 
     For example:
-    ```js
+    ```javascript
     const html = `
-        <li class="list-group-item">
-            <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
-                <h5>Take out trash</h5>
-                <span class="badge badge-danger">TODO</span>
+        <li class="card" style="min-width: 50vw">
+            <div class="card-body">
+              <h5 class="card-title">Name</h5>
+              <p class="card-text">
+                Some quick example text for a description.
+              </p>
+              <p class="card-text">Assigned To</p>
+              <p class="card-text">Due Date</p>
+              <div class="card-footer row">
+                <div class="col-6">
+                  <p class="card-text"><b>Task Status</b></p>
+                </div>
+                <div class="col-3">
+                  <button id="done-button" class="btn btn-outline-success">
+                    Done
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button id="delete-button" class="btn btn-outline-danger">
+                    Delete
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="d-flex w-100 mb-3 justify-content-between">
-                <small>Assigned To: Nick</small>
-                <small>Due: 20/09/2020</small>
-            </div>
-            <p>Take out the trash to the front of the house</p>
-        </li>
+          </li>
     `
     ```
 
-3. Using the template literal placeholders (`${}`), replace each section of the task HTML with the correct parameter
+3. Using the template literal placeholders (`${}`), replace each text section of the task HTML with the correct parameter
 
 4. Return the HTML from the function
 
@@ -52,20 +64,35 @@ In this step, we'll create a function using [template literals](https://develope
 > 2. `console.log()` the `taskHTML` variable
 >
 > **Expected Result**
-> You should see HTML for the task in the console, for example:
 >
+> You should see HTML for the task in the console, for example:
+>   
 > ```html
-><li class="list-group-item">
->   <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
->       <h5>Take out trash</h5>
->       <span class="badge badge-danger">TODO</span>
->   </div>
->   <div class="d-flex w-100 mb-3 justify-content-between">
->       <small>Assigned To: Nick</small>
->       <small>Due: 20/09/2020</small>
->   </div>
->   <p>Take out the trash to the front of the house</p>
-></li>
+><li class="card" style="min-width: 50vw">
+>            <div class="card-body">
+>             <h5 class="card-title">Name</h5>
+>              <p class="card-text">
+>                Some quick example text for a description.
+>              </p>
+>              <p class="card-text">Assigned To</p>
+>              <p class="card-text">Due Date</p>
+>              <div class="card-footer row">
+>                <div class="col-6">
+>                  <p class="card-text"><b>Task Status</b></p>
+>                </div>
+>                <div class="col-3">
+>                  <button id="done-button" class="btn btn-outline-success">
+>                    Done
+>                  </button>
+>                </div>
+>                <div class="col-3">
+>                  <button id="delete-button" class="btn btn-outline-danger">
+>                    Delete
+>                  </button>
+>                </div>
+>              </div>
+>            </div>
+>          </li>
 > ```
 
 ### Step 2: The render method
