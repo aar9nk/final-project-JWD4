@@ -19,7 +19,7 @@ In this step, we'll add Mocha to our project.
     ```
 2. Create a new test directory and a test.js file to add your tests:
   - `mkdir test`
-  - `$EDITOR test/test.js # or open with your favorite editor`
+  - `code test/test.js `
 
 
 ### Step 2: Testing TaskManager Methods
@@ -33,7 +33,7 @@ In this step, we'll test some of the methods that exist on our `TaskManager` cla
   - `addTask`
   - `deleteTask`
   - `getTaskById`
-5. Add a test case that tests how the `TaskManager` is initialized, ie: the `constructor` being called when a `new TaskManager()` is initialized.
+2. Add a test case that tests how the `TaskManager` is initialized, ie: the `constructor` being called when a `new TaskManager()` is initialized.
 
 > #### Test Your Code!
 > Now is a good chance to test your code:
