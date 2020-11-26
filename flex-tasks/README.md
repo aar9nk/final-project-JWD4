@@ -37,6 +37,7 @@ Now is your chance to go back to the design stage and wireframe ideas. As with a
 1. Take a look at the [display: flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) property in CSS. Try to use [Bootstrap's inline utilities](https://getbootstrap.com/docs/4.0/utilities/flex/) to display your content the way you want it. 
 2. Check to see if any more of your CSS can be used inline with [Bootstrap's inline utilities](https://getbootstrap.com/docs/4.0/utilities/flex/).  
 3. Try incorporating  your own logo / brand / colour patterns to match throughout the app. Try using [Custom CSS Properties (Variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to replace *hardcoded* values. 
+4. Try out the Chrome dev tools `toggle device toolbar` and view your app as if you were on a mobile device. Refer to Bootstrap's layout utilities, such as the [Responsive Breakpoint Section](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints)
 
 ### Step 4: Semantics 
 
