@@ -1,4 +1,4 @@
-const form = document.querySelector("#form");
+const form = document.querySelector("#new-task-form");
 
 form.addEventListener("submit", (event) => {
   const validateName = document.querySelector("#name");
