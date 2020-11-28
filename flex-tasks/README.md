@@ -68,3 +68,11 @@ Now is your chance to go back to the design stage and wireframe ideas. As with a
   - [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
   - [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) and [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) 
   - ES6 methods
+
+ ### Step 7: Favicon and Metadata
+
+>#### Useful Resources for this step
+> - [Favicon](https://developer.mozilla.org/en-US/docs/Glossary/Favicon)
+> - [Metadata](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+ 
+ There is more information to describe your web app in the HTML head tag. Search through the resources to find parts that will make your Task App unique!  
