@@ -94,7 +94,7 @@ After a long journey through the course you now have the chance to learn on your
 
 You may realise that there are ways to make the app more efficient, easier to read, or just better overall. Don't stop here! 
 1. Convert your `app.js` modules to use smaller components.
-2. Try out some react libraries like (Redux)[https://react-redux.js.org/]
+2. Try out some react libraries like [Redux](https://react-redux.js.org/)
 3. Stop using so much state! Refactor your code to use props instead. 
 4. Update all the meta information, make it a PWA.
 5. Include testing for the React App. 
