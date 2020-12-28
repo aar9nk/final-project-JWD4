@@ -211,7 +211,7 @@ export default function App() {
           <ul className="list-group" id="task-list">
             {tasks.map((task) => {
               return (
-                <li key={task.id} className="card" data-task-id="${id}">
+                <li key={task.id} className="card" data-task-id={task.id}>
                   <div className="card-body">
                     <h5 className="card-title">{task.name}</h5>
                     <p className="card-text">{task.description}</p>
