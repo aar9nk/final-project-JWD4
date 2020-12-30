@@ -14,3 +14,6 @@
 * Each Sprint will have a **demo** and a **retrospective** at the end following the Scrum methodology.
 * At the end of the project, you and your group will do a **final project presentation** to the entire class and potentially to a group of employers.
 
+**Example**
+
+[Check out a live example](https://final-project-jwd.netlify.app/)
