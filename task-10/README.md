@@ -82,3 +82,7 @@ Run your test and make sure they all passed!
 ## Example
 
 Stuck? Check out the provided example in the [/example](https://github.com/aar9nk/final-project-JWD4/tree/main/task-10/example) folder. This is using the chai assertion library, so it may be slightly different to the mocha assertions! Although the logic is still the same. 
+
+## Assessment
+
+This will be assessed as part of [Sprint 3](https://docs.google.com/spreadsheets/d/1X-LhsK5TaDvQZl-YS6XFxemVx3UhHdAY-vRcdR-rt9Q/edit#gid=1124211828) 

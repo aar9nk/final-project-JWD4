@@ -98,3 +98,18 @@ You may realise that there are ways to make the app more efficient, easier to re
 3. Stop using so much state! Refactor your code to use props instead. 
 4. Update all the meta information, make it a PWA.
 5. Include testing for the React App. 
+> #### Test Your Code!
+> Now is a good chance to test your code, open your `index.html` page and fill in **wrong** data on the form and check if the matching error is shown.
+> When the form fields are correct, no error message should be displayed.
+
+## Results
+
+We've now created the app in react, try using your app and see if you notice any differences!
+
+## Example
+
+Stuck? Check out the provided example in the [example/](example/) folder!
+
+## Assessment
+
+This will **NOT** be assessed, it is an optional extra.  

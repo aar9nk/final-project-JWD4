@@ -48,3 +48,8 @@ We've now created the basic structure to represent a list of tasks. We will even
 ## Example
 
 Stuck? Check out the provided example in the [example/](example/) folder!
+
+
+## Assessment
+
+This will be assessed as part of [Sprint 1](https://docs.google.com/spreadsheets/d/1X-LhsK5TaDvQZl-YS6XFxemVx3UhHdAY-vRcdR-rt9Q/edit#gid=1164902319) 
