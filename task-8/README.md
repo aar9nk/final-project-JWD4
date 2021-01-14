@@ -67,3 +67,7 @@ Also, since we saved the `currentId`, any _new_ task we create should use the ne
 ## Example
 
 Stuck? Check out the provided example in the [example/](example/) folder
+
+## Assessment
+
+This will be assessed as part of [Sprint 3](https://docs.google.com/spreadsheets/d/1X-LhsK5TaDvQZl-YS6XFxemVx3UhHdAY-vRcdR-rt9Q/edit#gid=1124211828) 
