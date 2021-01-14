@@ -38,3 +38,8 @@ You should have implemented the different screens of your application, meeting t
 ## Example
 
 ![](https://github.com/generation-org/jwd-final-project/blob/main/task-1/images/wireframes.png)
+
+## Assessment
+
+This will be assessed as part of [Sprint 1](https://docs.google.com/spreadsheets/d/1X-LhsK5TaDvQZl-YS6XFxemVx3UhHdAY-vRcdR-rt9Q/edit#gid=1164902319) 
+
