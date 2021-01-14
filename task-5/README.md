@@ -117,3 +117,7 @@ Test out your code by adding some tasks using the **New Task** form, and checkin
 ## Example
 
 Stuck? Check out the provided example in the [example/](example/) folder!
+
+## Assessment
+
+This will be assessed as part of [Sprint 2](https://docs.google.com/spreadsheets/d/1X-LhsK5TaDvQZl-YS6XFxemVx3UhHdAY-vRcdR-rt9Q/edit#gid=680203692) 
