@@ -20,11 +20,11 @@ you start designing. Ask the instructor if you have any questions!
 > - <a href="https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399" target="_blank">beginners guide to wireframing</a>
 
 
-> #### Test your Design!
-> Navigate through your designs and validate that you meet the **assessment criteria**. 
+ #### Test your Design!
+ Navigate through your designs and validate that you meet the **assessment criteria**. 
 
-> **Expected Result**
-> You should be able to navigate to all screens and fulfill the requirements.
+ **Expected Result**
+ You should be able to navigate to all screens and fulfill the requirements.
 
 
 ## Results
