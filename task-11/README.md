@@ -9,7 +9,7 @@ After a long journey through the course you now have the chance to learn on your
 - [React Codecademy Course](https://www.codecademy.com/learn/react-101)
 - [React Website](https://reactjs.org/)
 - [MDN's React](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
-
+- [Scrimba's React Course] (https://scrimba.com/learn/learnreact) 
 
 ## Walkthrough
 
