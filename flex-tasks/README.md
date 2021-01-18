@@ -67,7 +67,7 @@ Now is your chance to go back to the design stage and wireframe ideas. As with a
 1. Refactor your `index.js` and `taskManager.js` files to use ES6 aspects such as 
   - [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
   - [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) and [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) 
-  - ES6 methods
+  - [Aary methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)
 
  ### Step 7: Favicon and Metadata
 
