@@ -84,10 +84,17 @@ After a long journey through the course you now have the chance to learn on your
 
 ### Step 6: Final logic
 
-1. Change the `delete` and `done` buttons to use the unique key assigned in step 5, instead of eventListeners. 
-2. Call the `save()` method after the change in the `delete` and `done` buttons. 
-3. Create a new function `updateTasks` that will set the state of `tasks` to `taskManager.tasks`
-4. Call the `updateTasks` function when the tasks change, and React will then update the display to match the new task list! 
+1. Import `useEffect` from `'react'`, you can add it in right next to `useState`.
+2. Change the `delete` and `done` buttons to use the unique key assigned in step 5, instead of eventListeners. 
+3. Call the `save()` method after the change in the `delete` and `done` buttons. 
+4. Create a new useEffect hook that will set the state of `tasks` to `taskManager.tasks`. To determine when this `useEffect` hook is called, we can change the arguments in the empty array. But for now, if we leave it blank it will only run at startup to load the tasks. 
+
+```js
+  useEffect(() => {
+    setTasks(taskManager.tasks);
+  }, []);
+```
+4. Call the `setTasks(taskManager.tasks);` function when the tasks change, and React will then update the display to match the new task list! 
 5. Use the `load()` function where necessary to get the local storage. 
 
 ### Step 7: Above and beyond
@@ -105,10 +112,13 @@ You may realise that there are ways to make the app more efficient, easier to re
 ## Results
 
 We've now created the app in react, try using your app and see if you notice any differences!
+Upload it to a hosting site like [Netlify](www.netlify.com) and add the completed project to your portfolio!
 
 ## Example
 
 Stuck? Check out the provided example in the [example/](example/) folder!
+
+[Here](https://jwd-final-project-react.netlify.app/) is a finished version to look at.
 
 ## Assessment
 

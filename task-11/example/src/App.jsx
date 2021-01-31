@@ -1,13 +1,16 @@
-import { React, useState } from "react";
-import TaskManager from "./taskManager";
+/* eslint-disable */
+
+import { React, useState, useEffect } from 'react';
+import TaskManager from './taskManager';
+
 const taskManager = new TaskManager(0);
 
 export default function App() {
-  const [validateName, setValidateName] = useState("");
-  const [validateDescription, setvalidateDescription] = useState("");
-  const [validateAssignedTo, setvalidateAssignedTo] = useState("");
-  const [validateDueDate, setvalidateDueDate] = useState("");
-  const [validateStatus, setvalidateStatus] = useState("In Progress");
+  const [validateName, setValidateName] = useState('');
+  const [validateDescription, setvalidateDescription] = useState('');
+  const [validateAssignedTo, setvalidateAssignedTo] = useState('');
+  const [validateDueDate, setvalidateDueDate] = useState('');
+  const [validateStatus, setvalidateStatus] = useState('In Progress');
   const [nameStatus, setNameStatus] = useState(true);
   const [descriptionStatus, setdescriptionStatus] = useState(true);
   const [assignedToStatus, setassignedToStatus] = useState(true);
@@ -16,17 +19,21 @@ export default function App() {
   // grab the local storage
   taskManager.load();
 
+  useEffect(() => {
+    setTasks(taskManager.tasks);
+  }, []);
+
   // this is used after a submission
   const clearFormFields = () => {
     setNameStatus(true);
     setdescriptionStatus(true);
     setassignedToStatus(true);
     setdueDateStatus(true);
-    setValidateName("");
-    setvalidateDescription("");
-    setvalidateAssignedTo("");
-    setvalidateDueDate("");
-    setvalidateStatus("In Progress");
+    setValidateName('');
+    setvalidateDescription('');
+    setvalidateAssignedTo('');
+    setvalidateDueDate('');
+    setvalidateStatus('In Progress');
   };
 
   // add a task if the submitted inputs are valid
@@ -67,7 +74,6 @@ export default function App() {
     // If a validation fails, return nothing and the user must submit again
     if (validationFail > 0) {
       validationFail = 0;
-      return;
     } else {
       // Push the valid input into our tasks array
       taskManager.addTask(
@@ -80,12 +86,8 @@ export default function App() {
       // clear our forms, save to the local storage and then update our DOM
       clearFormFields();
       taskManager.save();
-      updateTasks();
+      setTasks(taskManager.tasks);
     }
-  };
-  // Essentially our old render() function
-  const updateTasks = () => {
-    setTasks(taskManager.tasks);
   };
 
   return (
@@ -103,7 +105,7 @@ export default function App() {
                   value={validateName}
                   type="text"
                   className={
-                    nameStatus ? "form-control" : "form-control is-invalid"
+                    nameStatus ? 'form-control' : 'form-control is-invalid'
                   }
                   id="new-task-name"
                   onChange={(element) => setValidateName(element.target.value)}
@@ -122,8 +124,8 @@ export default function App() {
                   type="text"
                   className={
                     descriptionStatus
-                      ? "form-control"
-                      : "form-control is-invalid"
+                      ? 'form-control'
+                      : 'form-control is-invalid'
                   }
                   id="new-task-description"
                   onChange={(element) =>
@@ -143,8 +145,8 @@ export default function App() {
                     type="text"
                     className={
                       assignedToStatus
-                        ? "form-control"
-                        : "form-control is-invalid"
+                        ? 'form-control'
+                        : 'form-control is-invalid'
                     }
                     id="new-task-assigned-to"
                     onChange={(element) =>
@@ -162,7 +164,7 @@ export default function App() {
                     value={validateDueDate}
                     type="date"
                     className={
-                      dueDateStatus ? "form-control" : "form-control is-invalid"
+                      dueDateStatus ? 'form-control' : 'form-control is-invalid'
                     }
                     id="new-task-due-date"
                     onChange={(element) =>
@@ -209,54 +211,50 @@ export default function App() {
         <h3 className="text-center">Tasks:</h3>
         <div className="d-flex justify-content-center">
           <ul className="list-group" id="task-list">
-            {tasks.map((task) => {
-              return (
-                <li key={task.id} className="card" data-task-id={task.id}>
-                  <div className="card-body">
-                    <h5 className="card-title">{task.name}</h5>
-                    <p className="card-text">{task.description}</p>
-                    <p className="card-text">{task.assignedTo}</p>
-                    <p className="card-text">{task.dueDate}</p>
-                    <div className="card-footer row">
-                      <div className="col-6">
-                        <p className="card-text">
-                          <b>{task.status}</b>
-                        </p>
-                      </div>
-                      <div className="col-3">
-                        <button
-                          className="btn btn-outline-success done-button"
-                          onClick={() => {
-                            const updatingTask = taskManager.getTaskById(
-                              task.id
-                            );
-                            updatingTask.status = "Done";
-                            updateTasks();
-
-                            taskManager.save();
-                          }}
-                        >
-                          Done
-                        </button>
-                      </div>
-                      <div className="col-3">
-                        <button
-                          className="btn btn-outline-danger delete-button"
-                          onClick={() => {
-                            taskManager.deleteTask(task.id);
-                            updateTasks();
-
-                            taskManager.save();
-                          }}
-                        >
-                          Delete
-                        </button>
-                      </div>
+            {tasks.map((task) => (
+              <li key={task.id} className="card" data-task-id={task.id}>
+                <div className="card-body">
+                  <h5 className="card-title">{task.name}</h5>
+                  <p className="card-text">{task.description}</p>
+                  <p className="card-text">{task.assignedTo}</p>
+                  <p className="card-text">{task.dueDate}</p>
+                  <div className="card-footer row">
+                    <div className="col-6">
+                      <p className="card-text">
+                        <b>{task.status}</b>
+                      </p>
+                    </div>
+                    <div className="col-3">
+                      <button
+                        type="button"
+                        className="btn btn-outline-success done-button"
+                        onClick={() => {
+                          const updatingTask = taskManager.getTaskById(task.id);
+                          updatingTask.status = 'Done';
+                          setTasks(taskManager.tasks);
+                          taskManager.save();
+                        }}
+                      >
+                        Done
+                      </button>
+                    </div>
+                    <div className="col-3">
+                      <button
+                        type="button"
+                        className="btn btn-outline-danger delete-button"
+                        onClick={() => {
+                          taskManager.deleteTask(task.id);
+                          setTasks(taskManager.tasks);
+                          taskManager.save();
+                        }}
+                      >
+                        Delete
+                      </button>
                     </div>
                   </div>
-                </li>
-              );
-            })}
+                </div>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
