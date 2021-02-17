@@ -94,7 +94,7 @@ I would recommend creating a dedicated variable to store a single reference to F
 In this cheatsheet, however, I'm going to stick to using the firestore method each time to be as clear as possible.
 To reference a collection, we use the `.collection()` method and provide a collection's id as an argument. To get a reference to the tasks collection we created, just pass in the string 'tasks'.
 ```js
-const booksRef = firebase.firestore().collection('books');
+const tasksRef = firebase.firestore().collection('tasks');
 ```
 
 Use the `.get()` to get all of the document data from a collection.
@@ -107,10 +107,10 @@ For a collection query, that snapshot is going to consist of a number of individ
 From each document, we can get the id as a separate property, and the rest of the data using the `.data()` method.
 Here's what our entire query looks like:
 ```js
-const booksRef = firebase
+const tasksRef = firebase
   .firestore()
   .collection("tasks");
-booksRef
+tasksRef
 	.get()
 	.then((snapshot) => {
 		const data = snapshot.docs.map((doc) => ({
@@ -170,7 +170,7 @@ useEffect(() => {
 When it comes to getting a document within a collection, the process is just the same as getting an entire collection: we need to first create a reference to that document, and then use the `.get()` method to grab it.
 After that, however, we use the `.doc()` method chained on to the `.collection()` method. In order to create a reference, we need to grab this id from the database if it was auto generated. After that, we can chain on `.get()` and resolve the promise.
 ```js
-const bookRef = firebase
+const taskRef = firebase
 	.firestore()
 	.collection("tasks")
 	.doc("glMeZvPpTN1Ah31sKcnj");
