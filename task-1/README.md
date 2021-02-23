@@ -41,5 +41,5 @@ You should have implemented the different screens of your application, meeting t
 
 ## Assessment
 
-This will be assessed as part of [Sprint 1](https://docs.google.com/spreadsheets/d/1X-LhsK5TaDvQZl-YS6XFxemVx3UhHdAY-vRcdR-rt9Q/edit#gid=1164902319) 
+This will be assessed as part of [Sprint 1](https://docs.google.com/spreadsheets/d/1WPyC5aAZANBREZ_Z23YLATMUkkP_v65IEY2rdOCLAQ0/edit?usp=sharing) 
 

@@ -158,7 +158,7 @@ Stuck? Check out the provided example in the [example/](example/) folder
 
 ## Assessment
 
-This will be assessed as part of [Sprint 2](https://docs.google.com/spreadsheets/d/1X-LhsK5TaDvQZl-YS6XFxemVx3UhHdAY-vRcdR-rt9Q/edit#gid=680203692) 
+This will be assessed as part of [Sprint 2](https://docs.google.com/spreadsheets/d/1WPyC5aAZANBREZ_Z23YLATMUkkP_v65IEY2rdOCLAQ0/edit?usp=sharing) 
 
 
 
